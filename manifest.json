@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Fun Extension",
+    "description": "Fun Extension for Fun lol",
+    "version": "0.1",
+    "icons": {
+        "16": "/images/16pxImage.png",
+        "48": "/images/48pxImage.png",
+        "128": "/images/128pxImage.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/16pxImage.png",
+        "48": "/images/48pxImage.png",
+        "128": "/images/128pxImage.png"
+      }
+    }
+  }
+  
