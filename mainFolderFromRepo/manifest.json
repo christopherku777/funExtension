@@ -1,12 +1,36 @@
 {
-    "manifest_version": 3,
-    "name": "Fun Extension",
-    "description": "Fun Extension for Fun lol",
-    "version": "0.1",
-    "icons": {
-        "16": "/images/16pxImage.png",
-        "48": "/images/48pxImage.png",
-        "128": "/images/128pxImage.png"
-    }
+  "manifest_version": 3,
+  "name": "TomatoBlocker",
+  "version": "0.1",
+  "description": "A Chrome extension to block distracting websites and help you focus using the Pomodoro technique.",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "icons": {
+    "16": "images/16pxImage.png",
+    "48": "images/48pxImage.png",
+    "128": "images/128pxImage.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "action": {
+    "default_popup": "mainPage.html",
+    "default_title": "TomatoBlocker"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "blockSites",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
   }
-  
+}
