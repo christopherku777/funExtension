@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: #FF6961;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: darkred;
+}
+
+.tab-content {
+    display: none;
+    color: #FF6961;
+    text-decoration-color: #FF6961;
+    align-items: center;
+}
+
+.tab-content.active {
+    display: block;
+    align-content: center;
+}
+
+.input-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px; /* Space between the input-button group and the next section */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    flex-direction: column;
+    margin-top: 10px; /* Add margin to separate from above content */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#blockerSiteInput, #allowerSiteInput {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #FF6961;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addBlockerSiteButton, #addAllowerSiteButton {
+    padding: 11px 5px;
+    background-color: #FF6961;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#focusModeButton {
+    padding: 5px 5px;
+    background-color: #FF6961;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addBlockerSiteButton:hover, #addAllowerSiteButton:hover, #focusModeButton:hover {
+    background-color: darkred;
+}
+/* Styling for added sites */
+#blockedSitesList,
+#allowedSitesList {
+    list-style-type: none;
+    align-items: center;
+}
+#blockedSitesList li,
+#allowedSitesList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color:grey;
+    font-size: 13px;
+}
+
+#blockedSitesList li button,
+#allowedSitesList li button {
+    padding: 0.5px 5px;
+    background-color: #56AE57;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#blockedSitesList li button:hover,
+#allowedSitesList li button:hover {
+    background-color: darkgreen;
+}
+
+

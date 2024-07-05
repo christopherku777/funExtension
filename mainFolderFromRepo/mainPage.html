@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TomatoBlocker 0.1</title>
+    <link rel="stylesheet" type="text/css" href="mainPage.css">
+    <script src="mainPage.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <img src="images/48pxImage.png" alt="TomatoBlocker Logo" class="logo">
+        <h1>TomatoBlocker 0.1</h1>
+    </div>
+    <div class="tabs">
+        <button class="tab-button" data-tab="siteBlocker">Site Blocker</button>
+        <button class="tab-button" data-tab="siteAllower">Site Allower</button>
+        <button class="tab-button" data-tab="pomodoro">Pomodoro</button>
+    </div>
+
+    <div id="siteBlocker" class="tab-content">
+        <div class="input-button-group">
+            <input type="text" id="blockerSiteInput" placeholder="Enter Blocked Site">
+            <button id="addBlockerSiteButton">+</button>
+        </div>
+        <div class="center-container">
+            <button id="focusModeButton">Enable Focus</button>
+        </div>
+        <ul id="blockedSitesList"></ul>
+    </div>
+
+    <div id="siteAllower" class="tab-content">
+        <div class="input-button-group">
+            <input type="text" id="allowerSiteInput" placeholder="Enter Allowed Site">
+            <button id="addAllowerSiteButton">+</button>
+        </div>
+        <div class="center-container">
+            <button id="focusModeButton">Enable Focus</button>
+        </div>
+        <ul id="allowedSitesList"></ul>
+    </div>
+
+    <div id="pomodoro" class="tab-content">
+        <h1>Pomodoro Timer</h1>
+        <!-- Pomo Timer Stuff -->
+    </div>
+</body>
+</html>
